@@ -1,0 +1,10 @@
+try:
+    m=input()
+    if(len(m)==0):
+        print("Error: Please enter a valid age.")
+    elif m.isnumeric():
+        print(f"You are {m} years old.")
+    else:
+        print("Error: Please enter a valid age.")
+except:
+    print("Error: Please enter a valid age.")
