@@ -1,0 +1,12 @@
+n = int(input().strip())
+arr = []
+for _ in range(n):
+    arr.append(int(input().strip()))
+frequency = {}
+for element in arr:
+    if element in frequency:
+        frequency[element] += 1
+    else:
+        frequency[element] = 1
+for key, value in frequency.items():
+    print(f"{key} occurs {value} times")
