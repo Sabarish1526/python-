@@ -1,0 +1,11 @@
+def index_mapping(A, B):
+    mapping = {}
+    for idx, value in enumerate(B):
+        mapping[value] = idx
+    return [mapping[value] for value in A]
+n = int(input())
+A = list(map(int, input().split()))
+B = list(map(int, input().split()))
+result = index_mapping(A, B)
+print(" ".join(map(str, result)))
+
